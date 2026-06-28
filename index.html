@@ -1,0 +1,3223 @@
+<!DOCTYPE html>
+
+<html>
+
+<div class="top-profile">
+
+<div class="welcome-text">
+<span>Welcome,</span>
+
+<h2>
+FinTrust Creations
+</h2>
+
+<p>
+📋 Workflow Management Tool
+</p>
+
+</div>
+
+
+<div class="user-icon">
+
+👤
+
+</div>
+
+
+</div>
+
+<head>
+<meta charset="UTF-8">
+<title>CSC Master Search Tool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+font-family:Arial;
+background:#f4f6f9;
+padding:10px;
+}
+
+h2{
+text-align:center;
+color:#2c3e50;
+}
+
+.container{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+margin-bottom:15px;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:2px solid #bfc9d1;
+font-size:16px;
+box-sizing:border-box;
+}
+
+.result{
+background:#ecf0f1;
+padding:12px;
+border-radius:8px;
+margin-top:10px;
+line-height:1.5;
+}
+
+/* BUTTON ROW */
+.btn-row{
+display:flex;
+gap:8px;
+margin-top:10px;
+}
+
+.btn-row .small-btn{
+flex:1;
+padding:8px;
+font-size:14px;
+white-space:nowrap;
+}
+
+button{
+padding:10px;
+margin-top:5px;
+width:100%;
+border:none;
+border-radius:5px;
+background:#2c3e50;
+color:white;
+font-size:15px;
+}
+
+.small-btn{
+width:auto;
+background:#555;
+}
+
+.delete{
+background:#e74c3c;
+}
+
+.backup{
+background:#25D366;
+}
+
+.title-section{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:25px;
+}
+
+.main-title{
+    font-size:32px;
+    font-weight:800;
+    color:#2c3e50;
+    margin-bottom:5px;
+    letter-spacing:0.5px;
+}
+
+.version-text{
+    font-size:15px;
+    color:#777;
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:15px;
+    font-weight:500;
+    color:#666;
+    margin-top:0;
+    line-height:1.4;
+}
+
+.top-profile{
+
+background:linear-gradient(
+135deg,
+#eef9ff,
+#ffffff
+);
+
+border-radius:0 0 25px 25px;
+
+padding:18px 20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.welcome-text span{
+
+font-size:14px;
+
+color:#777;
+
+}
+
+
+
+.welcome-text h2{
+
+margin:2px 0;
+
+font-size:26px;
+
+font-weight:800;
+
+color:#244a9b;
+
+text-align:left;
+
+}
+
+
+
+.welcome-text p{
+
+margin:5px 0 0;
+
+font-size:15px;
+
+color:#666;
+
+}
+
+
+
+.user-icon{
+
+font-size:32px;
+
+color:#466;
+
+opacity:.8;
+
+}
+
+.footer{
+    background:#f8f9fa;
+    padding:20px;
+    margin-top:30px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+
+.copyright{
+    text-align:center;
+    font-size:13px;
+    font-weight:600;
+    color:#444;
+    margin-bottom:15px;
+}
+
+.footer-text p{
+    text-align:justify;
+    font-size:13px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.support{
+    text-align:center;
+    font-size:13px;
+    color:#444;
+    font-weight:600;
+    margin-top:10px;
+}
+
+body{
+    font-family:Arial;
+    background:#f4f6f9;
+    padding:10px;
+    max-width:700px;
+    margin:auto;
+}
+
+.info-box{
+    background:#eef5ff;
+    border-left:5px solid #3498db;
+    padding:15px;
+    margin-top:20px;
+    border-radius:10px;
+    font-size:13px;
+    color:#444;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* PAGE SYSTEM */
+
+.page{
+display:none;
+}
+
+.page.active{
+display:block;
+}
+
+
+/* BOTTOM NAV */
+
+.bottom-nav{
+
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+
+height:70px;
+
+background:white;
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+border-top:1px solid #ddd;
+
+box-shadow:0 -3px 10px rgba(0,0,0,.15);
+
+z-index:9999;
+
+}
+
+
+.nav-item{
+
+text-align:center;
+
+font-size:13px;
+
+color:#555;
+
+}
+
+
+.nav-item span{
+
+display:block;
+
+font-size:24px;
+
+}
+
+
+.nav-item.active{
+
+color:#1aa179;
+
+font-weight:bold;
+
+}
+
+
+body{
+
+padding-bottom:90px;
+
+}
+
+/* MODERN HOME DESIGN */
+
+
+.hero-card{
+
+background:linear-gradient(
+135deg,
+#3155d8,
+#13a678
+);
+
+color:white;
+
+padding:25px;
+
+border-radius:25px;
+
+}
+
+
+.hero-card h1{
+
+font-size:28px;
+
+margin:0 0 10px;
+
+}
+
+
+.hero-card p{
+
+font-size:15px;
+
+opacity:.9;
+
+}
+
+
+.hero-card button{
+
+background:white;
+
+color:#3155d8;
+
+border-radius:25px;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+
+
+.dashboard-title{
+
+font-size:22px;
+
+font-weight:bold;
+
+margin:20px 5px;
+
+color:#34495e;
+
+}
+
+
+
+
+
+.summary-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+.summary-card{
+
+padding:18px;
+
+border-radius:20px;
+
+color:white;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+
+
+.summary-card h2{
+
+font-size:30px;
+
+margin:10px 0;
+
+}
+
+
+
+.summary-card h4{
+
+margin:0;
+
+}
+
+
+
+.summary-card p{
+
+margin:0;
+
+font-size:13px;
+
+}
+
+
+
+.blue{
+
+background:linear-gradient(
+135deg,#3498db,#2c3e50
+);
+
+}
+
+
+
+.green{
+
+background:linear-gradient(
+135deg,#16a085,#1abc9c
+);
+
+}
+
+
+
+
+
+.search-card{
+
+border-radius:20px;
+
+}
+
+
+
+
+
+.search-card input{
+
+border-radius:25px;
+
+}
+
+
+
+
+
+.action-card{
+
+background:#fff4e5;
+
+border-radius:20px;
+
+}
+
+
+
+
+.action-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:10px;
+
+}
+
+
+
+.action-grid button{
+
+border-radius:15px;
+
+background:#8e44ad;
+
+}
+
+.customer-card{
+
+background:#ffffff;
+
+padding:15px;
+
+border-radius:15px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+margin-bottom:15px;
+
+}
+
+
+.customer-card h3{
+
+color:#2c3e50;
+
+}
+
+
+.call-btn{
+
+background:#16a085;
+
+}
+
+
+.customer-status{
+
+padding:5px 10px;
+
+border-radius:15px;
+
+background:#eef5ff;
+
+display:inline-block;
+
+font-size:13px;
+
+}
+
+/* DARK MODE */
+
+body.dark{
+
+background:#121212;
+color:#eeeeee;
+
+}
+
+
+body.dark .container{
+
+background:#1e1e1e;
+
+color:#eeeeee;
+
+}
+
+
+/* remove container effect from customer cards */
+
+body.dark .customer-card{
+
+background:#2b2b2b !important;
+
+}
+
+
+body.dark h2,
+body.dark h3{
+
+color:#ffffff;
+
+}
+
+
+body.dark input,
+body.dark textarea,
+body.dark select{
+
+background:#2b2b2b;
+
+color:white;
+
+border-color:#555;
+
+}
+
+
+body.dark .result{
+
+background:#333;
+
+color:white;
+
+}
+
+
+body.dark .bottom-nav{
+
+background:#1e1e1e;
+
+border-color:#444;
+
+}
+
+
+body.dark .nav-item{
+
+color:#ccc;
+
+}
+
+
+body.dark .nav-item.active{
+
+color:#1abc9c;
+
+}
+
+
+body.dark .footer{
+
+background:#1e1e1e;
+
+}
+
+
+body.dark .info-box{
+
+background:#222;
+
+color:#ddd;
+
+}
+
+/* KEEP DASHBOARD CARD COLORS IN DARK MODE */
+
+body.dark .summary-card.blue{
+
+background:linear-gradient(
+135deg,
+#3498db,
+#2c3e50
+) !important;
+
+color:white !important;
+
+}
+
+
+body.dark .summary-card.green{
+
+background:linear-gradient(
+135deg,
+#16a085,
+#1abc9c
+) !important;
+
+color:white !important;
+
+}
+
+
+body.dark .summary-card h2,
+body.dark .summary-card h4,
+body.dark .summary-card p{
+
+color:white !important;
+
+}
+
+
+/* HERO CARD ALSO KEEP COLOR */
+
+body.dark .hero-card{
+
+background:linear-gradient(
+135deg,
+#3155d8,
+#13a678
+) !important;
+
+color:white !important;
+
+}
+
+
+body.dark .hero-card h1,
+body.dark .hero-card p{
+
+color:white !important;
+
+}
+
+body.dark .welcome-text h2{
+
+color:#244a9b !important;
+
+}
+
+.customer-card{
+
+background:#ffffff;
+
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.12);
+
+margin-bottom:18px;
+
+line-height:1.7;
+
+}
+
+
+/* customer title */
+
+.customer-card h3{
+
+color:#2c3e50;
+
+margin-top:0;
+
+font-size:22px;
+
+}
+
+
+/* customer status */
+
+.customer-status{
+
+padding:7px 14px;
+
+border-radius:20px;
+
+background:#eef5ff;
+
+display:inline-block;
+
+font-size:14px;
+
+}
+
+
+/* DARK MODE CUSTOMER CARD */
+
+
+body.dark .customer-card{
+
+background:#2b2b2b;
+
+color:white;
+
+box-shadow:0 3px 12px rgba(0,0,0,.5);
+
+}
+
+
+body.dark .customer-card h3{
+
+color:white;
+
+}
+
+
+body.dark .customer-status{
+
+background:#344f6b;
+
+color:white;
+
+}
+
+
+body.dark .customer-card button{
+
+color:white;
+
+}
+
+
+/* keep buttons colours */
+
+.customer-card .call-btn{
+
+background:#16a085;
+
+}
+
+
+.customer-card button:not(.call-btn):not(.delete){
+
+background:#2c3e50;
+
+}
+
+
+.customer-card .delete{
+
+background:#e74c3c;
+
+}
+
+/* DARK MODE FOOTER TEXT FIX */
+
+body.dark .copyright{
+
+color:#ffffff !important;
+
+}
+
+
+body.dark .footer-text p{
+
+color:#dddddd !important;
+
+}
+
+
+body.dark .support{
+
+color:#ffffff !important;
+
+}
+
+
+/* Footer box */
+
+body.dark .footer{
+
+background:#1e1e1e;
+
+border:1px solid #333;
+
+}
+
+/* DARK MODE DASHBOARD TITLE FIX */
+
+body.dark .dashboard-title{
+
+color:#ffffff !important;
+
+}
+
+
+/* also improve quick action headings */
+
+body.dark .container h3{
+
+color:#ffffff;
+
+}
+
+/* FINAL DARK MODE FIX - UPDATED */
+
+body.dark{
+    background:#121212 !important;
+    color:#eeeeee;
+}
+
+
+/* normal containers only */
+body.dark .container{
+
+    background:#1e1e1e !important;
+    color:white;
+
+}
+
+
+/* KEEP HOME HERO CARD COLOUR */
+
+body.dark .hero-card{
+
+background:linear-gradient(
+135deg,
+#3155d8,
+#13a678
+) !important;
+
+color:white !important;
+
+}
+
+
+body.dark .hero-card h1,
+body.dark .hero-card p{
+
+color:white !important;
+
+}
+
+
+/* CUSTOMER LIST */
+
+body.dark .customer-card{
+
+background:#333333 !important;
+
+color:white !important;
+
+box-shadow:
+0 4px 15px rgba(0,0,0,.45);
+
+}
+
+
+body.dark .customer-card h3{
+
+color:white !important;
+
+}
+
+
+/* RECORD LIST */
+
+body.dark .result{
+
+background:#333333 !important;
+
+color:white !important;
+
+}
+
+
+/* footer */
+
+body.dark .footer{
+
+background:#1e1e1e !important;
+
+color:white;
+
+}
+
+
+/* top profile */
+
+body.dark .top-profile{
+
+background:linear-gradient(
+135deg,
+#1e1e1e,
+#252525
+) !important;
+
+}
+
+
+/* headings */
+
+body.dark h2,
+body.dark h3,
+body.dark h4{
+
+color:white !important;
+
+}
+
+
+/* text */
+
+body.dark p,
+body.dark span,
+body.dark label{
+
+color:#ddd;
+
+}
+
+
+/* inputs */
+
+body.dark input,
+body.dark textarea,
+body.dark select{
+
+background:#2b2b2b !important;
+
+color:white !important;
+
+border-color:#555;
+
+}
+
+
+/* bottom menu */
+
+body.dark .bottom-nav{
+
+background:#1e1e1e !important;
+
+}
+
+
+/* info box */
+
+body.dark .info-box{
+
+background:#222 !important;
+
+color:#ddd !important;
+
+}
+
+
+/* QUICK ACTION CARD */
+
+body.dark .action-card{
+
+background:#252525 !important;
+
+}
+
+
+/* dashboard cards keep colours */
+
+body.dark .summary-card.blue{
+
+background:linear-gradient(
+135deg,
+#3498db,
+#2c3e50
+) !important;
+
+}
+
+
+body.dark .summary-card.green{
+
+background:linear-gradient(
+135deg,
+#16a085,
+#1abc9c
+) !important;
+
+}
+
+
+/* bottom menu */
+
+body.dark .bottom-nav{
+
+background:#1e1e1e !important;
+
+}
+
+
+/* info box */
+
+body.dark .info-box{
+
+background:#222 !important;
+
+color:#ddd !important;
+
+}
+
+
+/* action card */
+
+body.dark .action-card{
+
+background:#252525 !important;
+
+}
+
+
+/* lock screen */
+
+body.dark #lockScreen{
+
+background:#121212 !important;
+
+}
+
+
+/* input fields */
+
+body.dark input,
+body.dark textarea,
+body.dark select{
+
+background:#2b2b2b !important;
+
+color:white !important;
+
+}
+
+/* FINAL CUSTOMER LIST DARK MODE FIX */
+
+body.dark .customer-card{
+
+    background:#333333 !important;
+
+    color:#ffffff !important;
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,0.45);
+
+    border-radius:20px;
+
+}
+
+
+/* customer heading */
+
+body.dark .customer-card h3{
+
+    color:#ffffff !important;
+
+}
+
+
+/* customer text */
+
+body.dark .customer-card br{
+
+    color:#ffffff;
+
+}
+
+
+/* customer status pill */
+
+body.dark .customer-status{
+
+    background:#3b5f85 !important;
+
+    color:white !important;
+
+}
+
+
+/* buttons inside customer card */
+
+body.dark .customer-card button{
+
+    color:white !important;
+
+}
+
+
+/* call button */
+
+body.dark .customer-card .call-btn{
+
+    background:#16a085 !important;
+
+}
+
+
+/* edit button */
+
+body.dark .customer-card button:not(.call-btn):not(.delete){
+
+    background:#34495e !important;
+
+}
+
+
+/* delete button */
+
+body.dark .customer-card .delete{
+
+    background:#e74c3c !important;
+
+}
+
+</style>
+
+</head>
+
+<body class="dark">
+
+<script>
+if(localStorage.getItem("theme") !== "light"){
+    document.body.classList.add("dark");
+    localStorage.setItem("theme","dark");
+}
+</script>
+
+
+<div id="lockScreen"
+
+style="
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:#121212;
+z-index:99999;
+display:flex;
+align-items:center;
+justify-content:center;
+">
+
+<div class="container" style="width:90%;max-width:350px;text-align:center">
+
+<h2>🔐 App Lock</h2>
+
+<input 
+type="password"
+id="loginPassword"
+placeholder="Enter Password">
+
+
+<button onclick="checkPassword()">
+Unlock
+</button>
+
+
+
+
+
+</div>
+
+</div>
+
+
+<!-- HOME PAGE -->
+
+<div id="homePage" class="page active">
+
+
+<div class="container hero-card">
+
+<h1>
+📋 Smart Service Manager
+</h1>
+
+<p>
+ Workflow Management Tool
+</p>
+
+
+<button onclick="
+openPage('recordsPage',
+document.querySelectorAll('.nav-item')[1])
+">
+
+➕ Add New Service
+
+</button>
+
+
+</div>
+
+
+
+
+<div class="dashboard-title">
+
+📊 Today's Overview
+
+</div>
+
+
+
+<div class="summary-grid">
+
+
+<div class="summary-card blue">
+
+<h4>
+📋 Services
+</h4>
+
+<h2>
+<span id="serviceCount">0</span>
+</h2>
+
+<p>
+Total Available
+</p>
+
+</div>
+
+
+
+
+<div class="summary-card green">
+
+<h4>
+💰 Income
+</h4>
+
+<h2>
+
+₹ <span id="todayIncome">0</span>
+
+</h2>
+
+
+<p>
+Today's Collection
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="container search-card">
+
+
+<h3>
+🔍 Quick Service Search
+</h3>
+
+
+<input 
+id="homeSearch"
+placeholder="Search service..."
+onkeyup="quickSearch()">
+
+
+
+<div id="homeOutput">
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="container action-card">
+
+
+<h3>
+⚡ Quick Actions
+</h3>
+
+
+<div class="action-grid">
+
+
+<button onclick="
+openPage('recordsPage',
+document.querySelectorAll('.nav-item')[1])
+">
+
+📋 Records
+
+</button>
+
+
+
+<button onclick="resetIncome()">
+
+🔄 Reset Income
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- RECORD PAGE -->
+
+
+<div id="recordsPage" class="page">
+
+
+
+<div class="container">
+
+
+<h3 id="formTitle">
+
+Add Service
+
+</h3>
+
+
+<input type="hidden" id="editIndex">
+
+
+<input id="serviceName"
+placeholder="Service Name">
+
+
+<input id="serviceKeywords"
+placeholder="Keywords">
+
+
+<input id="serviceDocuments"
+placeholder="Documents">
+
+
+<textarea id="serviceSteps"
+placeholder="Steps"></textarea>
+
+
+<input id="serviceTime"
+placeholder="Time">
+
+
+<input id="serviceCharge"
+placeholder="Charge ₹">
+
+
+<textarea id="serviceDownload"
+placeholder="Download Steps"></textarea>
+
+
+<textarea id="serviceNote"
+placeholder="Notes"></textarea>
+
+
+<button id="saveButton"
+onclick="saveService()">
+
+Add Service
+
+</button>
+
+
+</div>
+
+
+
+<div class="container">
+
+
+<h3>
+🔍 Search Services
+</h3>
+
+
+<input 
+id="search"
+placeholder="Search..."
+onkeyup="searchService()">
+
+
+
+</div>
+
+
+
+<div class="container">
+
+<h3>
+Services
+</h3>
+
+
+<div id="output">
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<!-- CUSTOMER PAGE -->
+
+
+<div id="customerPage" class="page">
+
+
+<div class="container">
+
+
+<h2>
+📞 Customer Details
+</h2>
+
+
+<input type="hidden" id="customerIndex">
+
+
+<input id="customerName"
+placeholder="Customer Name">
+
+
+<input id="customerPhone"
+placeholder="Mobile Number">
+
+
+<input id="customerEmail"
+placeholder="Email ID (optional)">
+
+
+
+<input id="customerService"
+placeholder="Service Applied">
+
+
+
+<label>
+Application Date
+</label>
+
+<input id="customerDate"
+type="date">
+
+
+
+<label>
+Status
+</label>
+
+<select id="customerStatus">
+
+<option>Pending</option>
+
+<option>Approved</option>
+
+<option>Completed</option>
+
+<option>Renewal</option>
+
+</select>
+
+
+<div style="height:20px;"></div>
+
+
+<label>
+Next Reminder Date
+</label>
+
+
+<input 
+id="customerReminder"
+type="date">
+
+
+
+<textarea 
+id="customerNote"
+placeholder="Notes"></textarea>
+
+
+
+<button onclick="saveCustomer()">
+
+💾 Save Customer
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<h3>
+👥 Customer List
+</h3>
+
+<input 
+id="customerSearch"
+placeholder="🔍 Search name / mobile / service / status..."
+onkeyup="searchCustomer()">
+
+<div id="customerOutput">
+</div>
+
+<button id="customerMoreBtn"
+onclick="toggleCustomerList()">
+
+Show More
+
+</button>
+
+
+</div>
+
+
+</div>
+
+<!-- SETTINGS PAGE -->
+
+
+<div id="settingsPage" class="page">
+
+
+<div class="container">
+
+
+<h2>
+⚙️ Settings
+</h2>
+
+<div class="container">
+
+<h3>
+🔐 Password Settings
+</h3>
+
+
+<input 
+type="password"
+id="settingNewPassword"
+placeholder="Create New Password">
+
+
+<input 
+type="password"
+id="settingConfirmPassword"
+placeholder="Confirm Password">
+
+
+<button onclick="saveSettingPassword()">
+
+💾 Save Password
+
+</button>
+
+
+</div>
+
+</div>
+
+
+
+<div class="container">
+
+
+<h3>
+💾 Backup & Restore
+</h3>
+
+
+<p style="color:#777;font-size:14px;">
+ഫോൺ മാറ്റുമ്പോൾ ഡാറ്റ സുരക്ഷിതമായി സൂക്ഷിക്കാൻ
+</p>
+
+
+<button onclick="saveBackupFile()">
+
+📤 Save / Share Backup
+
+</button>
+
+
+<input type="file" id="restoreFile" accept=".json"
+
+style="display:none"
+onchange="restoreFromFile(event)">
+
+
+<button onclick="document.getElementById('restoreFile').click()">
+
+📁 Restore from File
+
+</button>
+
+
+
+<textarea id="restoreBox"
+placeholder="Paste Backup Data from WhatsApp here">
+
+</textarea>
+
+
+
+<button onclick="restoreFromText()">
+
+📋 Restore from Text
+
+</button>
+
+
+</div>
+
+<div class="container">
+
+<h3>
+🎨 Appearance
+</h3>
+
+<button onclick="toggleDarkMode()">
+
+🌙 Dark Mode / ☀️ Light Mode
+
+</button>
+
+</div>
+
+<div class="container">
+
+
+<h3>
+⚠️ Disclaimer
+</h3>
+
+
+<p>
+
+This application is a workflow management tool.
+Users should verify service rules and charges
+from official sources.
+
+</p>
+
+
+</div>
+
+
+
+<div class="container">
+
+
+<h3>
+ℹ️ App Information
+</h3>
+
+
+<p>
+
+FinTrust Creations
+
+</p>
+
+
+<p>
+
+Support: fintrustcreations@gmail.com
+
+</p>
+
+<footer class="footer">
+
+<div class="copyright">
+©️ <span id="year"></span> FinTrust Creations. All Rights Reserved.
+</div>
+
+<div class="footer-text">
+
+<p>
+This application is an independent utility and productivity tool 
+created for educational, workflow management, and operational 
+assistance purposes only.
+</p>
+
+<p>
+Users are responsible for verifying all service procedures, 
+charges, rules, and government guidelines from official sources 
+before providing services to customers.
+</p>
+
+<div class="support">
+<b>Support:</b> fintrustcreations@gmail.com
+</div>
+
+</div>
+
+</footer>
+
+<div class="info-box">
+
+<b>Important Information:</b><br><br>
+
+• This application is optimized for mobile devices and touch-screen usage.<br><br>
+
+• Data is stored locally in your browser/device storage using local storage technology.<br><br>
+
+• Please use the backup feature regularly to avoid data loss during device change, browser reset, or storage clearing.
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- BOTTOM NAV -->
+
+
+<div class="bottom-nav">
+
+
+<div class="nav-item active"
+onclick="openPage('homePage',this)">
+
+<span>🏠</span>
+
+Home
+
+</div>
+
+
+
+<div class="nav-item"
+onclick="openPage('recordsPage',this)">
+
+<span>📋</span>
+
+Records
+
+</div>
+
+
+
+<div class="nav-item"
+onclick="openPage('customerPage',this)">
+
+<span>👥</span>
+
+Customers
+
+</div>
+
+
+
+<div class="nav-item"
+onclick="openPage('settingsPage',this)">
+
+<span>⚙️</span>
+
+Settings
+
+</div>
+
+
+
+</div>
+
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<script>
+
+let services = JSON.parse(localStorage.getItem("services")) || [];
+
+function saveLocal(){
+localStorage.setItem("services", JSON.stringify(services));
+}
+
+/* SEARCH */
+
+function searchService(){
+
+let input = document.getElementById("search").value.toLowerCase();
+let output = "";
+
+let sorted = [...services].sort((a,b)=>
+(a.name||"").toLowerCase().localeCompare((b.name||"").toLowerCase())
+);
+
+
+sorted.forEach((s)=>{
+
+if(
+(s.name||"").toLowerCase().includes(input) ||
+(s.keywords||"").toLowerCase().includes(input)
+){
+
+
+let i = services.indexOf(s);
+
+
+output += `
+
+<div class="result">
+
+<h3>${s.name}</h3>
+
+<b>Documents:</b><br>
+${s.documents||""}
+
+<br><br>
+
+<b>Steps:</b><br>
+${s.steps||""}
+
+<br><br>
+
+<b>Time:</b>
+${s.time||""}
+
+<br>
+
+
+${s.charge ? 
+`<b>Charge:</b> ₹${s.charge}<br>` 
+: ""}
+
+
+${s.download ? 
+`<br><b>Download:</b><br>${s.download}<br>` 
+: ""}
+
+
+${s.note ? 
+`<br><b>Note:</b><br>${s.note}<br>` 
+: ""}
+
+
+
+<div class="btn-row">
+
+
+<button class="small-btn"
+onclick="addIncome(${s.charge || 0})">
+Add ₹
+</button>
+
+
+
+<button class="small-btn"
+onclick="loadEdit(${i})">
+Edit
+</button>
+
+
+
+<button class="small-btn delete"
+onclick="deleteService(${i})">
+Delete
+</button>
+
+
+</div>
+
+
+</div>
+
+
+`;
+
+}
+
+});
+
+
+document.getElementById("output").innerHTML =
+output || "No service found";
+
+
+
+let homeInput =
+document.getElementById("homeSearch").value.trim();
+
+
+
+if(homeInput !== ""){
+
+document.getElementById("homeOutput").innerHTML =
+output || "No service found";
+
+}
+else{
+
+document.getElementById("homeOutput").innerHTML="";
+
+}
+
+
+updateServiceCount();
+
+}
+
+/* ADD */
+
+function saveService(){
+
+
+let index =
+document.getElementById("editIndex").value;
+
+
+let data={
+
+name:serviceName.value.trim(),
+
+keywords:serviceKeywords.value,
+
+documents:serviceDocuments.value,
+
+steps:serviceSteps.value,
+
+time:serviceTime.value,
+
+charge:serviceCharge.value,
+
+download:serviceDownload.value,
+
+note:serviceNote.value
+
+};
+
+
+
+if(data.name===""){
+
+alert("Enter Service Name");
+
+return;
+
+}
+
+
+
+if(index===""){
+
+
+services.push(data);
+
+
+alert("Service Added");
+
+
+}
+
+else{
+
+
+services[index]=data;
+
+
+alert("Service Updated");
+
+
+}
+
+
+
+saveLocal();
+
+
+clearForm();
+
+
+searchService();
+
+
+}
+
+
+
+function loadEdit(i){
+
+
+let s=services[i];
+
+
+editIndex.value=i;
+
+
+serviceName.value=s.name || "";
+
+serviceKeywords.value=s.keywords || "";
+
+serviceDocuments.value=s.documents || "";
+
+serviceSteps.value=s.steps || "";
+
+serviceTime.value=s.time || "";
+
+serviceCharge.value=s.charge || "";
+
+serviceDownload.value=s.download || "";
+
+serviceNote.value=s.note || "";
+
+
+
+document.getElementById("formTitle").innerHTML=
+"Edit Service";
+
+
+document.getElementById("saveButton").innerHTML=
+"Update Service";
+
+
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+
+}
+
+
+
+function clearForm(){
+
+
+editIndex.value="";
+
+
+serviceName.value="";
+
+serviceKeywords.value="";
+
+serviceDocuments.value="";
+
+serviceSteps.value="";
+
+serviceTime.value="";
+
+serviceCharge.value="";
+
+serviceDownload.value="";
+
+serviceNote.value="";
+
+
+document.getElementById("formTitle").innerHTML=
+"Add Service";
+
+
+document.getElementById("saveButton").innerHTML=
+"Add Service";
+
+
+}
+
+/* DELETE */
+function deleteService(i){
+if(confirm("Delete?")){
+services.splice(i,1);
+saveLocal();
+searchService();
+}
+}
+
+/* CLEAR */
+function clearAdd(){
+newName.value="";
+newKeywords.value="";
+newDocuments.value="";
+newSteps.value="";
+newTime.value="";
+newCharge.value="";
+newDownload.value="";
+newNote.value="";
+}
+
+function clearEdit(){
+editIndex.value="";
+editName.value="";
+editKeywords.value="";
+editDocuments.value="";
+editSteps.value="";
+editTime.value="";
+editCharge.value="";
+editDownload.value="";
+editNote.value="";
+}
+
+/* BACKUP + RESTORE FINAL */
+
+
+/* CREATE FULL BACKUP DATA */
+
+function createBackupData(){
+
+return JSON.stringify({
+
+app:"CSC Master Search Tool",
+
+date:new Date().toLocaleString(),
+
+services:services,
+
+customers:customers,
+
+income:localStorage.getItem(getTodayKey()) || 0
+
+},null,2);
+
+}
+
+
+
+
+/* SAVE / SHARE BACKUP */
+
+
+async function saveBackupFile(){
+
+
+let backupText = createBackupData();
+
+
+let blob = new Blob(
+[backupText],
+{
+type:"application/json"
+}
+);
+
+
+
+let file = new File(
+[blob],
+"CSC_Master_Backup.json",
+{
+type:"application/json"
+}
+);
+
+
+
+/* MOBILE SHARE */
+
+if(
+navigator.share &&
+/Android|iPhone|iPad/i.test(navigator.userAgent)
+){
+
+
+try{
+
+
+await navigator.share({
+
+title:"CSC Master Backup",
+
+text:"CSC Master Backup File",
+
+files:[file]
+
+});
+
+
+return;
+
+
+}
+
+catch(error){
+
+console.log(error);
+
+}
+
+
+}
+
+
+
+/* DESKTOP DOWNLOAD */
+
+
+let url =
+URL.createObjectURL(blob);
+
+
+
+let link =
+document.createElement("a");
+
+
+link.href=url;
+
+
+link.download="CSC_Master_Backup.json";
+
+
+document.body.appendChild(link);
+
+
+link.click();
+
+
+document.body.removeChild(link);
+
+
+
+setTimeout(()=>{
+
+URL.revokeObjectURL(url);
+
+},1000);
+
+
+
+alert("Backup downloaded successfully");
+
+
+}
+
+
+
+
+
+
+/* RESTORE FROM TEXT */
+
+
+function restoreFromText(){
+
+
+let text =
+document.getElementById("restoreBox").value.trim();
+
+
+
+if(text===""){
+
+alert("Paste backup data first");
+
+return;
+
+}
+
+
+
+try{
+
+
+let data =
+JSON.parse(text);
+
+
+restoreAllData(data);
+
+
+}
+
+catch(e){
+
+alert("Invalid backup text");
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* RESTORE FROM FILE */
+
+
+function restoreFromFile(event){
+
+
+
+let file =
+event.target.files[0];
+
+
+if(!file){
+
+return;
+
+}
+
+
+
+let reader =
+new FileReader();
+
+
+
+reader.onload=function(e){
+
+
+try{
+
+
+let data =
+JSON.parse(e.target.result);
+
+
+restoreAllData(data);
+
+
+}
+
+catch{
+
+
+alert("Invalid backup file");
+
+}
+
+
+};
+
+
+
+reader.readAsText(file);
+
+
+}
+
+
+
+
+
+
+
+/* FINAL RESTORE */
+
+
+function restoreAllData(data){
+
+
+
+if(data.services){
+
+
+services=data.services;
+
+
+localStorage.setItem(
+"services",
+JSON.stringify(services)
+);
+
+
+}
+
+
+
+if(data.customers){
+
+
+customers=data.customers;
+
+
+localStorage.setItem(
+"customers",
+JSON.stringify(customers)
+);
+
+
+}
+
+
+
+if(data.income){
+
+
+localStorage.setItem(
+getTodayKey(),
+data.income
+);
+
+
+}
+
+
+
+searchService();
+
+showCustomers();
+
+loadIncome();
+
+updateServiceCount();
+
+
+
+alert("All Data Restored Successfully");
+
+
+}
+
+/* INCOME */
+function getTodayKey(){
+let d = new Date();
+return "income_" + d.toISOString().slice(0,10);
+}
+
+function loadIncome(){
+let total = localStorage.getItem(getTodayKey()) || 0;
+todayIncome.innerText = total;
+}
+
+function addIncome(amount){
+
+if(!amount || amount == 0){
+let input = prompt("Enter amount ₹:");
+if(input === null) return;
+amount = parseFloat(input);
+if(isNaN(amount)){
+alert("Invalid amount");
+return;
+}
+}
+
+let key = getTodayKey();
+let current = parseFloat(localStorage.getItem(key)) || 0;
+
+current += amount;
+localStorage.setItem(key, current);
+loadIncome();
+}
+
+function resetIncome(){
+if(confirm("Reset today?")){
+localStorage.setItem(getTodayKey(), 0);
+loadIncome();
+}
+}
+
+/* LOAD */
+searchService();
+loadIncome();
+updateServiceCount();
+
+
+function openPage(id,el){
+
+document.querySelectorAll(".page")
+.forEach(p=>{
+p.classList.remove("active");
+});
+
+
+document.getElementById(id)
+.classList.add("active");
+
+
+document.querySelectorAll(".nav-item")
+.forEach(n=>{
+n.classList.remove("active");
+});
+
+
+el.classList.add("active");
+
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+
+
+function quickSearch(){
+
+document.getElementById("search").value =
+document.getElementById("homeSearch").value;
+
+
+searchService();
+
+}
+
+
+
+function updateServiceCount(){
+
+document.getElementById("serviceCount")
+.innerHTML = services.length;
+
+}
+
+
+function loadDashboard(){
+
+updateServiceCount();
+loadIncome();
+
+}
+
+
+loadDashboard();
+
+let customers =
+JSON.parse(localStorage.getItem("customers")) || [];
+
+
+
+function saveCustomer(){
+
+
+let index = customerIndex.value;
+
+
+let data={
+
+name:customerName.value,
+
+phone:customerPhone.value,
+
+email:customerEmail.value,
+
+service:customerService.value,
+
+date:customerDate.value,
+
+status:customerStatus.value,
+
+reminder:customerReminder.value,
+
+note:customerNote.value
+
+};
+
+
+
+if(data.name==""){
+
+alert("Enter customer name");
+
+return;
+
+}
+
+
+
+if(index==""){
+
+customers.push(data);
+
+}
+else{
+
+customers[index]=data;
+
+}
+
+
+
+localStorage.setItem(
+"customers",
+JSON.stringify(customers)
+);
+
+
+clearCustomer();
+
+showCustomers();
+
+
+alert("Customer Saved");
+
+
+}
+
+
+
+
+function formatDate(date){
+
+if(!date){
+return "";
+}
+
+let parts = date.split("-");
+
+return parts[2] + "-" + parts[1] + "-" + parts[0];
+
+}
+
+let showAllCustomers = false;
+
+function showCustomers(list = customers){
+
+
+let out="";
+
+
+let displayList = showAllCustomers 
+? list 
+: list.slice(0,5);
+
+
+
+displayList.forEach((c,i)=>{
+
+
+out+=`
+
+<div class="customer-card">
+
+
+<h3>${c.name}</h3>
+
+
+📱 ${c.phone}<br>
+
+📋 ${c.service}<br>
+
+📅 Applied: ${formatDate(c.date)}<br>
+
+
+<span class="customer-status">
+
+${c.status}
+
+</span>
+
+
+<br><br>
+
+
+🔔 Reminder:
+
+${formatDate(c.reminder) || "Not set"}
+
+
+<br><br>
+
+
+📝 ${c.note || ""}
+
+
+<br><br>
+
+
+<button class="call-btn"
+
+onclick="location.href='tel:${c.phone}'">
+
+📞 Call
+
+</button>
+
+
+
+<button onclick="editCustomer(${i})">
+
+✏️ Edit
+
+</button>
+
+
+
+<button class="delete"
+
+onclick="deleteCustomer(${i})">
+
+🗑 Delete
+
+</button>
+
+
+
+</div>
+
+
+`;
+
+});
+
+
+customerOutput.innerHTML =
+out || "No customers found";
+
+
+
+if(list.length > 5){
+
+customerMoreBtn.style.display="block";
+
+
+customerMoreBtn.innerHTML =
+showAllCustomers 
+? "Show Less"
+: "Show More";
+
+
+}
+
+else{
+
+customerMoreBtn.style.display="none";
+
+}
+
+
+}
+
+function toggleCustomerList(){
+
+showAllCustomers = !showAllCustomers;
+
+showCustomers();
+
+}
+
+
+
+
+
+function editCustomer(i){
+
+
+let c=customers[i];
+
+
+customerIndex.value=i;
+
+
+customerName.value=c.name;
+
+customerPhone.value=c.phone;
+
+customerEmail.value=c.email || "";
+
+customerService.value=c.service;
+
+customerDate.value=c.date;
+
+customerStatus.value=c.status;
+
+customerReminder.value=c.reminder;
+
+customerNote.value=c.note;
+
+
+
+openPage(
+'customerPage',
+document.querySelectorAll('.nav-item')[2]
+);
+
+
+}
+
+
+
+
+
+function deleteCustomer(i){
+
+
+if(confirm("Delete customer?")){
+
+
+customers.splice(i,1);
+
+
+localStorage.setItem(
+"customers",
+JSON.stringify(customers)
+);
+
+
+showCustomers();
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function deleteCustomer(i){
+
+if(confirm("Delete customer?")){
+
+
+customers.splice(i,1);
+
+
+localStorage.setItem(
+"customers",
+JSON.stringify(customers)
+);
+
+
+showCustomers();
+
+
+}
+
+}
+
+
+
+function clearCustomer(){
+
+
+customerIndex.value="";
+
+customerName.value="";
+
+customerPhone.value="";
+
+customerService.value="";
+
+customerDate.value="";
+
+customerReminder.value="";
+
+customerNote.value="";
+
+
+}
+
+
+
+showCustomers();
+
+function searchCustomer(){
+
+let text =
+document.getElementById("customerSearch")
+.value
+.toLowerCase()
+.trim();
+
+
+let filtered = customers.filter(c=>{
+
+
+return (
+
+(c.name || "")
+.toLowerCase()
+.includes(text)
+
+
+||
+
+(c.phone || "")
+.toLowerCase()
+.includes(text)
+
+
+||
+
+(c.service || "")
+.toLowerCase()
+.includes(text)
+
+
+||
+
+(c.status || "")
+.toLowerCase()
+.includes(text)
+
+
+);
+
+
+});
+
+
+showCustomers(filtered);
+
+
+}
+
+/* PASSWORD SYSTEM */
+
+
+function checkPassword(){
+
+
+let entered =
+document.getElementById("loginPassword").value.trim();
+
+
+let saved =
+localStorage.getItem("appPassword");
+
+
+
+if(!saved){
+
+alert("Please create password from Settings first");
+
+return;
+
+}
+
+
+
+if(entered === saved){
+
+
+document.getElementById("lockScreen")
+.style.display="none";
+
+
+}
+
+else{
+
+
+alert("Wrong Password");
+
+
+}
+
+
+}
+
+
+
+
+function saveSettingPassword(){
+
+
+let p1 =
+document.getElementById("settingNewPassword")
+.value.trim();
+
+
+let p2 =
+document.getElementById("settingConfirmPassword")
+.value.trim();
+
+
+
+if(p1===""){
+
+alert("Enter password");
+
+return;
+
+}
+
+
+
+if(p1!==p2){
+
+alert("Password not matching");
+
+return;
+
+}
+
+
+
+localStorage.setItem(
+"appPassword",
+p1
+);
+
+
+
+alert("Password Saved Successfully");
+
+
+document.getElementById("settingNewPassword").value="";
+
+document.getElementById("settingConfirmPassword").value="";
+
+
+}
+
+/* DARK MODE SYSTEM */
+
+
+function toggleDarkMode(){
+
+
+document.body.classList.toggle("dark");
+
+
+if(document.body.classList.contains("dark")){
+
+
+localStorage.setItem(
+"theme",
+"dark"
+);
+
+
+}
+
+else{
+
+
+localStorage.setItem(
+"theme",
+"light"
+);
+
+
+}
+
+
+}
+
+
+
+
+
+// LOAD SAVED THEME
+
+
+window.addEventListener("load", function(){
+
+let theme = localStorage.getItem("theme");
+
+if(theme !== "light"){
+
+document.body.classList.add("dark");
+
+localStorage.setItem("theme","dark");
+
+}
+
+});
+
+</script>
+
+
+</body>
+</html>
