@@ -3075,23 +3075,16 @@ let saved =
 localStorage.getItem("appPassword");
 
 
-// First time user
+// FIRST TIME DEFAULT PASSWORD
+
 if(!saved){
 
-document.getElementById("lockScreen")
-.style.display="none";
+saved = "1234";
 
-
-openPage(
-'settingsPage',
-document.querySelectorAll('.nav-item')[3]
+localStorage.setItem(
+"appPassword",
+saved
 );
-
-
-alert("Please create your password in Settings");
-
-
-return;
 
 }
 
