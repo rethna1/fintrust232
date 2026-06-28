@@ -3067,7 +3067,6 @@ showCustomers(filtered);
 
 function checkPassword(){
 
-
 let entered =
 document.getElementById("loginPassword").value.trim();
 
@@ -3076,10 +3075,21 @@ let saved =
 localStorage.getItem("appPassword");
 
 
-
+// First time user
 if(!saved){
 
-alert("Please create password from Settings first");
+document.getElementById("lockScreen")
+.style.display="none";
+
+
+openPage(
+'settingsPage',
+document.querySelectorAll('.nav-item')[3]
+);
+
+
+alert("Please create your password in Settings");
+
 
 return;
 
