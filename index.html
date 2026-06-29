@@ -28,6 +28,11 @@ FinTrust Creations
 </div>
 
 <head>
+   <link rel="icon" href="icon-192.png">
+
+<link rel="apple-touch-icon" href="icon-192.png">
+
+<link rel="manifest" href="manifest.json"> 
 <meta charset="UTF-8">
 <title>CSC Master Search Tool</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -3239,6 +3244,11 @@ localStorage.setItem("theme","dark");
 
 </script>
 
-
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(() => console.log("Service Worker Registered"));
+}
+</script>
 </body>
 </html>
