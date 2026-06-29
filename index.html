@@ -1759,6 +1759,15 @@ placeholder="Paste Backup Data from WhatsApp here">
 
 </button>
 
+
+<button onclick="logoutApp()"
+style="background:#e74c3c;margin-top:15px;">
+
+🔒 Logout
+
+</button>
+
+
 </div>
 
 <div class="container">
@@ -3163,7 +3172,16 @@ document.getElementById("settingConfirmPassword").value="";
 
 
 }
+function logoutApp(){
 
+document.getElementById("loginPassword").value="";
+
+
+document.getElementById("lockScreen")
+.style.display="flex";
+
+
+}
 /* DARK MODE SYSTEM */
 
 
